@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <center>
+    <div id="container">
+        <div id="ragistorBox">
+    <h3><u>Ragister Account:</u></h3>
+    <labar>Enter user name:</lable>
+    <br>
+    <input type="text" id="regUser" placeholder="Enter username">
+    <br><br>
+    <lable>Enter a password:</lable>
+    <br>
+    <input type="password" id="regPass" placeholder="Enter password">
+    <br><br>
+    <button id="registerBtn"><b>Save</b></button>
+    <br><br>
+    <button id="alradyLogin">alrady have a account
+</button>
+</div>
+<div id="loginBox">
+   <button id="adminBtn"type="button" > <h6>admin?</h6></button>
+    <h3>Login Account:</h3>
+    <lable> Enter username:</lable>
+    <br>
+    <input type="text" id="loginUser" placeholder="Username:">
+    <br><br>
+    <lable>Enter  password:</lable>
+    <br>
+    <input type="password" id="loginPass" placeholder="Password:">
+    <br><br>
+    <button id="loginBtn"><b>Login</b></button>
+    <br><br>
+    <button id="backBtn">Back to ragister</button>
+    </div></div>
+    <div id="actualPage">
+         <button id="logoutBtn">Logout</button>
+        <p id="first">welcome to our digital photo studio</p>
+        <h1><u>*PURVI PHOTO STUDIO* </u></h1>
+       
+        
+        <!-- Navigation bar-->
+        <div id="nav">
+            <button id="home">Home</button>
+            <button id="services">Services</button>
+            <button id="gallery">Gallery</button>
+            <button id="contact">Contact us</button>
+            <button id="feed">  Feddback</button>
+        </div>
+        
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32" alt="Camera image" width="1300vh" height="500vh">
+        <h1> services:</h1>
+        <div id="mainPage1">
+        
+       <button id="service1b"> <div id="service1"><h3>Event shoot</h3></div></button>
+        <button id="service2b"><div id="service2">Graphic design</div></button>
+       
+        <button id="service3b"><div id="service3" >photo and Vedio editing</div></button>
+        </div>
+        <br><br>
+        <div id="mainPage2">
+         <button id="service4b"><div id="service4">camera rent</div></button>
+         
+         <button id="service5b"><div id="service5"> Dron shoot</div></button>
+         
+         <button id="service6b"><div id="service6">Product Photography</div></button>
+    </div>
+
+    <!-- for sevices (adding to all service after click):-->
+    <div id="servicepopup">
+        
+        <div class="popip-content">
+        <h2>Book Now</h2>
+        <a href="tel:9284272745" class=" call-btn">
+            📞 Call Now
+        </a>
+        <br><br>
+        <a href="https://wa.me/919284272745" target="_blank" id="whatsapp_btn">
+                 💬 Message on WhatsApp
+
+        </a>
+        <br><br>
+        <button id="closepopup" class="btn close-btn">
+            close
+        </button>
+        
+        
+        </div>
+        </div>
+        <br><br>
+        <!--FOOTER -->
+        <footer id="footer">
+          <div id="BrandInfo">
+             <h3><img src="https://img.icons8.com/ios-filled/100/000000/camera.png" alt="Photo Studio Icon" width="50" height="50">
+                Purvi Photo Studio :Capturing Your Moments</h3>
+             
+             <p>Capturing your moments with passion and creativity.<br>
+                 We specialize in photography, videography, and,<br>
+                 graphic design to bring your vision to life.</p>
+                 
+          </div>
+          <div id="contactInfo">
+            <h3><img src="https://static.thenounproject.com/png/camera-icon-icon-2125155-512.png" alt="Photo Studio Icon" width="50" height="50">
+                contact info:</h3>
+                <p>Address:at.post:jeur tal:akkalkot dist.:solapur</p>
+                <p>contact No:9284272745></p>
+                <p>insta:Megharajsodde07</p>
+                <p>whatsapp:9284272745</p>
+          </div>
+        </footer>
+         <div id="messege"> THANKS FOR SUBMIT</div>                                 
+        </div>
+    </center>
+     <center>
+    <form id="feedbackForm" >
+            <lable>Enter your name</lable>
+            <input type="text" placeholder="Name">
+            <br><br><br>
+            <lable>how was experiance:</lable>
+            <input type="radio" value="good" name="choice1">good
+            <input type="radio" value="nice" name="choice1">nice
+            <input type="radio" value="excellent" name="choice1">excellent
+            <br><br><br>
+            <lable> can you visit again?</lable>
+            <input type="radio" value="YES " name="choice2">YES
+            <input type="radio" value="NO" name="choice2">NO
+            <input type="radio" value="MAY BE" name="choice2">MAY BE
+            <br><br><br>
+            <lable> Needs to improvement?</lable>
+            <input type="radio" value="NO" name="choice3">NO
+            <input type="radio" value="YES" name="choice3">YES
+            <br><br><br>
+            <lable>favarate service:</lable>
+            
+            <br><br>
+            <button id="submitBtn"  type="button"onclick="handleSubmit()">Submit</button> 
+            <br><br>
+            <button  id="backFeed"type="button" onclick="handleBack()">Back</button>
+            </center>
+        </form>
+        
+        <!-- Galary that contain many images that taken by purvi photo studio-->
+        <div id="Gal">
+           
+           <h3 id="heading3">images we cliked in Events,Weddings,Dron shoots,Edited images:</h3>
+           <button id="galBackBtn">Back</button>
+            <button type="button" id="addImageBtn" >ADD IMAGE</button>
+            <button type="button" id="deleteImageBtn">Delete images</button>
+            <div id="galImages">
+               
+               
+                
+            <!--input button-->
+            <input type="file" id="imageInput" accept="image/*" >
+            </div>
+           
+
+           
+        </div>
+
+        <!-- contact us handling-->
+         <div id="contactUs">
+          <h1>contact now</h1>
+            <a href="tel:9284272745" class=" call-btn">
+            📞 Call Now
+        </a>
+        <br><br>
+        <a href="https://wa.me/919284272745" target="_blank" id="whatsapp_btn">
+                 💬 Message on WhatsApp
+
+        </a>
+        <br><br>
+        <button id="closepopup" class="btn close-btn">
+            close
+        </button>
+         </div>
+        
+       <div id="adminBox"> 
+        <h3>Welcome Back Admin:</h3>
+        <div id="loginadmin" >
+            <lable>Enter Email:</lable><br>
+            <input type="email" id="loginEmail"  placeholder="Email">
+            <br><br>
+            <lable>Enter password</lable><br>
+            <input type="password" id="loginPassword" placeholder="Password">
+            <br><br><br>
+            <button type="button" onclick="adminLoginBtnHanddle()" >Login</button>
+            <br><br>
+            <button type="button"  id="adminBackBtn">Back</button>
+            
+        </div>
+      
+       </div>
+    <script src="project.js"></script>
+</body>
+</html>
